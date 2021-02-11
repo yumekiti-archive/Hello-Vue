@@ -8,6 +8,7 @@ import BMI from '@/components/bmi'
 import Instance from '@/components/instance'
 import Syntax from '@/components/syntax'
 import Calculated from '@/components/calculated'
+import Other from '@/components/other'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/calculated',
       name: 'calculated',
       component: Calculated
+    },
+    {
+      path: '/other',
+      name: 'other',
+      component: Other
     }
   ]
 })

@@ -9,10 +9,9 @@
     <input v-model="height"><br>
 
     <span>体重：</span>
-    <input v-model="weight"><br>
+    <input v-model="weight"><br><br><hr><br>
 
-    <button @click="BMIcalc">calc</button><br><hr><br>
-
+    <button @click="BMIcalc">calc</button>
     <span>BMI: {{ BMI }} </span><br><br><hr>
 
   </div>
