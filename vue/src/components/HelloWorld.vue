@@ -81,7 +81,6 @@
         </a>
       </li>
     </ul>
-    <router-link to="/">戻る</router-link>
   </div>
 </template>
 

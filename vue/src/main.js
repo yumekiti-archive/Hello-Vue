@@ -6,6 +6,13 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+Vue.component('todo-item', {
+  // todo-item コンポーネントはカスタム属性のような "プロパティ" で受け取ります。
+  // このプロパティは todo と呼ばれます。
+  props: ['todo'],
+  template: '<li>{{ todo.text }}</li>'
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
