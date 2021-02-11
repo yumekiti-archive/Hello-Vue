@@ -31,7 +31,7 @@
 <script>
 export default {
   name: 'rokukara',
-  data: function() {
+  data() {
     return {
       message4: 'Hello Vue!',
 

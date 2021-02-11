@@ -7,6 +7,9 @@
         <td><router-link id="link" to="/itikara">1~5</router-link></td>
         <td><router-link id="link" to="/rokukara">6~7</router-link></td>
         <td><router-link id="link" to="/bmi">BMI</router-link></td>
+        <td><router-link id="link" to="/instance">Instance</router-link></td>
+        <td><router-link id="link" to="/syntax">Syntax</router-link></td>
+        <td><router-link id="link" to="/calculated">Calculated</router-link></td>
       </tr>
     </table>
     <router-view/>

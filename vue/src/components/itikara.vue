@@ -44,7 +44,7 @@
 <script>
 export default {
   name: 'itikara',
-  data: function() {
+  data() {
     return {
     
       message1: 'Hello Vue!',

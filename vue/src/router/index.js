@@ -5,6 +5,9 @@ import Home from '@/components/Home'
 import Itikara from '@/components/itikara'
 import Rokukara from '@/components/rokukara'
 import BMI from '@/components/bmi'
+import Instance from '@/components/instance'
+import Syntax from '@/components/syntax'
+import Calculated from '@/components/calculated'
 
 Vue.use(Router)
 
@@ -34,6 +37,21 @@ export default new Router({
       path: '/bmi',
       name: 'bmi',
       component: BMI
+    },
+    {
+      path: '/instance',
+      name: 'instance',
+      component: Instance
+    },
+    {
+      path: '/syntax',
+      name: 'syntax',
+      component: Syntax
+    },
+    {
+      path: '/calculated',
+      name: 'calculated',
+      component: Calculated
     }
   ]
 })
