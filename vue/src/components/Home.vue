@@ -1,12 +1,12 @@
 <template>
   <div class="Home">
 
-    <h1>vueのチュートリアルです</h1>
+    <h1>Study Vue</h1>
     
     <h2>Home</h2>
 
     <h3>
-      <a href="https://jp.vuejs.org/v2/guide/index.html" target="_blank">参考記事</a>
+      <a href="https://jp.vuejs.org/v2/guide/index.html" target="_blank">Reference</a>
     </h3>
 
   </div>

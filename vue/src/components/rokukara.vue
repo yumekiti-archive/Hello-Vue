@@ -1,6 +1,8 @@
 <template>
   <div class="rokukara">
 
+    <h1>app-6〜app-7</h1>
+
     <hr><br>
 
     <div id="app-6">

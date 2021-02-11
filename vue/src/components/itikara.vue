@@ -1,6 +1,8 @@
 <template>
   <div class="itikara">
 
+    <h1>app-1〜app-5</h1>
+
     <hr><br>
 
     <div id="app-1">
