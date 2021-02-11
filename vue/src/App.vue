@@ -5,7 +5,8 @@
         <td><router-link id="link" to="/">Home</router-link></td>
         <td><router-link id="link" to="/hello">Welcome</router-link></td>
         <td><router-link id="link" to="/itikara">1~5</router-link></td>
-        <td><router-link id="link" to="/rokukara">6~10</router-link></td>
+        <td><router-link id="link" to="/rokukara">6~7</router-link></td>
+        <td><router-link id="link" to="/bmi">BMI</router-link></td>
       </tr>
     </table>
     <router-view/>

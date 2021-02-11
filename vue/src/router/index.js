@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Home from '@/components/Home'
 import Itikara from '@/components/itikara'
 import Rokukara from '@/components/rokukara'
+import BMI from '@/components/bmi'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/rokukara',
       name: 'rokukara',
       component: Rokukara
+    },
+    {
+      path: '/bmi',
+      name: 'bmi',
+      component: BMI
     }
   ]
 })
