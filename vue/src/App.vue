@@ -10,7 +10,7 @@
         <td><router-link id="link" to="/other">Other</router-link></td>
         <td><router-link id="link" to="/instance">Instance</router-link></td>
         <td><router-link id="link" to="/syntax">Syntax</router-link></td>
-        <td><router-link id="link" to="/calculated">Calculated</router-link></td>
+        <td><router-link id="link" to="/calculatedwatcher">Calculated-Watcher</router-link></td>
       </tr>
     </table>
     <router-view/>

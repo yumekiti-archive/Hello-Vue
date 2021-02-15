@@ -7,7 +7,7 @@ import Rokukara from '@/components/rokukara'
 import BMI from '@/components/bmi'
 import Instance from '@/components/instance'
 import Syntax from '@/components/syntax'
-import Calculated from '@/components/calculated'
+import CalculatedWatcher from '@/components/calculatedwatcher'
 import Other from '@/components/other'
 
 Vue.use(Router)
@@ -50,9 +50,9 @@ export default new Router({
       component: Syntax
     },
     {
-      path: '/calculated',
-      name: 'calculated',
-      component: Calculated
+      path: '/calculatedwatcher',
+      name: 'calculatedwatcher',
+      component: CalculatedWatcher
     },
     {
       path: '/other',

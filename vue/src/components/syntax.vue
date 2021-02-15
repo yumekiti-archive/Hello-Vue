@@ -14,7 +14,7 @@
     <div id="syntax-2">
       <p>Using mustaches: {{ rawHtml }}</p>
       <p>Using v-html directive: <span v-html="rawHtml"></span></p>
-    </div><br><hr><br>
+    </div><br><hr>
 
     <div id="syntax-3">
 
@@ -40,7 +40,7 @@
       <!-- 動的引数の省略記法 -->
       <a @[event]="doSomething"> ... </a><br>
 
-    </div>
+    </div><br><hr><br>
     
   </div>
 </template>
