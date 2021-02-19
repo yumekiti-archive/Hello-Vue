@@ -11,6 +11,8 @@
         <td><router-link id="link" to="/instance">Instance</router-link></td>
         <td><router-link id="link" to="/syntax">Syntax</router-link></td>
         <td><router-link id="link" to="/calculatedwatcher">Calculated-Watcher</router-link></td>
+        <td><router-link id="link" to="/binding">Binding</router-link></td>
+        <td><router-link id="link" to="/conditions">Conditions</router-link></td>
       </tr>
     </table>
     <router-view/>

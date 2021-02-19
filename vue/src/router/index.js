@@ -9,6 +9,8 @@ import Instance from '@/components/instance'
 import Syntax from '@/components/syntax'
 import CalculatedWatcher from '@/components/calculatedwatcher'
 import Other from '@/components/other'
+import Binding from '@/components/binding'
+import Conditions from '@/components/conditions'
 
 Vue.use(Router)
 
@@ -58,6 +60,16 @@ export default new Router({
       path: '/other',
       name: 'other',
       component: Other
+    },
+    {
+      path: '/binding',
+      name: 'binding',
+      component: Binding
+    },
+    {
+      path: '/conditions',
+      name: 'conditions',
+      component: Conditions
     }
   ]
 })
