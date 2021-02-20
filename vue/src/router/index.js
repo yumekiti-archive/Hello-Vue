@@ -11,6 +11,8 @@ import CalculatedWatcher from '@/components/calculatedwatcher'
 import Other from '@/components/other'
 import Binding from '@/components/binding'
 import Conditions from '@/components/conditions'
+import List from '@/components/list'
+import Todo from '@/components/todo'
 
 Vue.use(Router)
 
@@ -70,6 +72,16 @@ export default new Router({
       path: '/conditions',
       name: 'conditions',
       component: Conditions
+    },
+    {
+      path: '/list',
+      name: 'list',
+      component: List
+    },
+    {
+      path: '/todo',
+      name: 'todo',
+      component: Todo
     }
   ]
 })

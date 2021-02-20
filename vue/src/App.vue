@@ -12,7 +12,10 @@
         <td><router-link id="link" to="/syntax">Syntax</router-link></td>
         <td><router-link id="link" to="/calculatedwatcher">Calculated-Watcher</router-link></td>
         <td><router-link id="link" to="/binding">Binding</router-link></td>
+        <td><router-link id="link" to="/conditions">list</router-link></td>
         <td><router-link id="link" to="/conditions">Conditions</router-link></td>
+        <td><router-link id="link" to="/list">List</router-link></td>
+        <td><router-link id="link" to="/todo">Todo</router-link></td>
       </tr>
     </table>
     <router-view/>

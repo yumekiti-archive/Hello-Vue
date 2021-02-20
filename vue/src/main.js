@@ -13,6 +13,16 @@ Vue.component('todo-item', {
   template: '<li>{{ todo.text }}</li>'
 })
 
+Vue.component('todo-item-2', {
+  template: `
+    <li>
+      {{ title }}
+      <button @click="$emit('remove')">Remove</button>
+    </li>
+  `,
+  props: ['title']
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
