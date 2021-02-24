@@ -10,11 +10,20 @@
       <a href="https://v3.ja.vuejs.org/guide/introduction.html" target="_blank">Reference v3</a>
     </h3>
 
+    <hr>
+    <h4>vuex</h4>
+    <p> {{ count }} </p>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  computed: {
+    count () {
+      return this.$store.state.count
+    }
+  },
 }
 </script>

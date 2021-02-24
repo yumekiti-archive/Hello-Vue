@@ -13,6 +13,7 @@ import Binding from '@/components/binding'
 import Conditions from '@/components/conditions'
 import List from '@/components/list'
 import Todo from '@/components/todo'
+import Vuex from '@/components/vuex'
 
 Vue.use(Router)
 
@@ -82,6 +83,11 @@ export default new Router({
       path: '/todo',
       name: 'todo',
       component: Todo
+    },
+    {
+      path: '/vuex',
+      name: 'vuex',
+      component: Vuex
     }
   ]
 })

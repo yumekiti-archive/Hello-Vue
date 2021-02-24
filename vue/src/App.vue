@@ -16,6 +16,7 @@
         <td><router-link id="link" to="/conditions">Conditions</router-link></td>
         <td><router-link id="link" to="/list">List</router-link></td>
         <td><router-link id="link" to="/todo">Todo</router-link></td>
+        <td><router-link id="link" to="/vuex">Vuex</router-link></td>
       </tr>
     </table>
     <router-view/>
