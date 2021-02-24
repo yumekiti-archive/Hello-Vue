@@ -13,7 +13,10 @@
       <p>内容：{{ naiyou }}</p>
       <p>選択：{{ sel }}</p>
       <textarea rows="4" cols="40" v-model="naiyou" @select="selected"></textarea>
-    </div>
+    </div><br><hr><br>
+    
+    <v-fa icon="coffee" />
+    <v-fa :icon="['fab', 'twitter']" />
 
   </div>
 </template>
@@ -33,7 +36,7 @@ export default {
     },
     selected: function() {
       this.sel = window.getSelection().toString();
-    }
+    },
   }
 }
 </script>

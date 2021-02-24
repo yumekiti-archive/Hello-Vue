@@ -4,6 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
+//icon
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 Vue.config.productionTip = false
 
@@ -23,6 +29,12 @@ Vue.component('todo-item-2', {
   `,
   props: ['title']
 })
+
+// アイコンを読み込み
+library.add(fas, far, fab);
+
+// Vueコンポーネントを作成
+Vue.component('v-fa', FontAwesomeIcon);
 
 /* eslint-disable no-new */
 new Vue({
