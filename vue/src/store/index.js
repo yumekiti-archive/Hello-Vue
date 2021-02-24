@@ -26,8 +26,36 @@ export default new Vuex.Store({
     increment (state) {
       state.count++
     },
+    decrement (state) {
+        state.count--
+    }
   },
   actions: {
+    incrementAsync ({ commit }) {
+      setTimeout(() => {
+        commit('increment')
+      }, 1000)
+    },
+    actionA ({ commit }) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          commit('someMutation')
+          resolve()
+        }, 1000)
+      })
+    },
+    actionB ({ dispatch, commit }) {
+        return dispatch('actionA').then(() => {
+          commit('someOtherMutation')
+        })
+    },
+    async actionC ({ commit }) {
+        commit('gotData', await getData())
+    },
+    async actionD ({ dispatch, commit} ) {
+      await dispatch('actionC')
+      commit('gotOtherData', await getOtherData())
+    }
   },
   modules: {
   }
