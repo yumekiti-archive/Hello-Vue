@@ -10,7 +10,6 @@
     <p> {{ count1 }} </p>
 
     <button @click="increment"> increment </button>
-    <button @click="commit"> commit </button>
 
     <br><hr>
 
@@ -64,13 +63,19 @@
 
     <button @click="reset"> reset </button>
 
+    <br><hr>
+
+    <misskey-timeline />
+
   </div>
 </template>
 
 <script>
 import { mapMutations, mapGetters, mapState, mapActions } from 'vuex';
+import MisskeyTimeline from '../components/MisskeyTimeline';
 
 export default {
+  components: { MisskeyTimeline },
   name: 'vuex',
   computed: {
     
@@ -92,13 +97,6 @@ export default {
       this.$store.dispatch('resetCount');
     },
 
-    commit: function() {
-
-    },
-
-    ...mapMutations([
-      'increment',
-    ]),
     ...mapActions([
       'increment'
     ]),

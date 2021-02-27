@@ -11,9 +11,15 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
+import hoge from './components/hoge';
+import { BootstrapVue } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css' // add
+import 'bootstrap-vue/dist/bootstrap-vue.css' // add
+
 //vuex localStorage
 import { initialState } from './store'; //追加
 
+Vue.use(BootstrapVue)
 Vue.config.productionTip = false
 
 Vue.component('todo-item', {
@@ -38,6 +44,8 @@ library.add(fas, far, fab);
 
 // Vueコンポーネントを作成
 Vue.component('v-fa', FontAwesomeIcon);
+
+Vue.component('hoge', hoge);
 
 /* eslint-disable no-new */
 new Vue({
