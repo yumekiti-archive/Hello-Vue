@@ -41,6 +41,9 @@
       <li>
         <router-link exact-active-class='active' class="nav-link" to="/vuex">Vuex</router-link>
       </li>
+      <li>
+        <router-link exact-active-class='active' class="nav-link" to="/bootstrap">bootstrap</router-link>
+      </li>
     </ul>
 
     <br>

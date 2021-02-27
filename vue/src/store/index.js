@@ -4,7 +4,7 @@ import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
 
-export const initialState = {   
+export const initialState = {
   conunt: 0
 }
 let inStorageInitialState = window.localStorage.getItem('initialState');
@@ -27,7 +27,7 @@ async function loadCount() {
     };
   }
   console.log(countObj);
-  
+
   return countObj
 }
 
@@ -54,10 +54,10 @@ export default new Vuex.Store({
   mutations: {
     /*increment (state) {
       state.count++
-    },
+  },*/
     decrement (state) {
         state.count--
-    },*/
+    },
     INCREMENT(state) {
       state.count = state.count + 1;
     },
@@ -68,7 +68,7 @@ export default new Vuex.Store({
       state.count = count;
     },
 
-    
+
 
   },
   actions: {

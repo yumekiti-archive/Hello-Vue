@@ -6,7 +6,7 @@
     <hr>
 
     <h2>State - Mutations</h2>
-    
+
     <p> {{ count1 }} </p>
 
     <button @click="increment"> increment </button>
@@ -78,7 +78,7 @@ export default {
   components: { MisskeyTimeline },
   name: 'vuex',
   computed: {
-    
+
     count1 () {
       return this.$store.state.count
     },

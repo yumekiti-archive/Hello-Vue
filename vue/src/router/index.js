@@ -14,6 +14,7 @@ import Conditions from '@/components/conditions'
 import List from '@/components/list'
 import Todo from '@/components/todo'
 import Vuex from '@/components/vuex'
+import BootstrapComponent from '@/components/bootstrap'
 
 Vue.use(Router)
 
@@ -89,6 +90,11 @@ export default new Router({
       path: '/vuex',
       name: 'vuex',
       component: Vuex
+    },
+    {
+      path: '/bootstrap',
+      name: 'bootstrap',
+      component: BootstrapComponent
     }
   ]
 })
