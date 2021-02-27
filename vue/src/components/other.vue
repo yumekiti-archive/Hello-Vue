@@ -20,7 +20,13 @@
       ツイート
     </button>
     
-    <v-fa icon="coffee" />
+    <v-fa :icon="['fab', 'apple-pay']" />
+
+    <br><br><hr><br>
+
+    <p> {{ count }} </p>
+
+    <button @click="increment">increment</button>
 
   </div>
 </template>
@@ -34,7 +40,18 @@ export default {
       naiyou:""
     }
   },
+
+  computed:{
+    count () {
+      return this.$store.state.count2
+    },
+  },
   methods: {
+
+    increment(){
+      return this.$store.state.count2 ++ 
+    },
+
     myClick() {
       alert("click!!")
     },

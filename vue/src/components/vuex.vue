@@ -60,13 +60,15 @@
 
     <hr>
 
+    <h2>localstorage</h2>
+
+    <button @click="reset"> reset </button>
+
   </div>
 </template>
 
 <script>
-import { mapMutations } from 'vuex';
-import { mapGetters } from 'vuex';
-import { mapState } from 'vuex';
+import { mapMutations, mapGetters, mapState, mapActions } from 'vuex';
 
 export default {
   name: 'vuex',
@@ -85,17 +87,23 @@ export default {
   },
   methods: {
 
+    reset: function() {
+//      this.$store.commit('RESET_VUEX_STATE')
+      this.$store.dispatch('resetCount');
+    },
+
     commit: function() {
-      this.$store.commit('increment')
+
     },
 
     ...mapMutations([
       'increment',
     ]),
+    ...mapActions([
+      'increment'
+    ]),
 
-    increment () {
-      this.$store.dispatch('incrementAsync');
-    },
+
     decrement () {
       this.$store.commit('decrement');
     },

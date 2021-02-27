@@ -11,6 +11,9 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
+//vuex localStorage
+import { initialState } from './store'; //追加
+
 Vue.config.productionTip = false
 
 Vue.component('todo-item', {
@@ -42,5 +45,10 @@ new Vue({
   router,
   components: { App },
   store,
-  template: '<App/>'
+  template: '<App/>',
+  created() {
+    // created時に初期StateをlocalStorageに保存しておく。
+    //localStorage.setItem('initialState', JSON.stringify(initialState));
+    this.$store.dispatch('initialLoad');
+  },
 })
